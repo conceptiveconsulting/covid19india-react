@@ -80,7 +80,7 @@ function Navbar({
             setExpand(false);
           }}
         >
-          Covid19<span>India</span>
+          Covid19 India<span> Stats</span>
         </Link>
       </div>
 
@@ -106,26 +106,7 @@ function Navbar({
                 <Icon.Home {...activeNavIcon('/')} />
               </Link>
             </span>
-            <span>
-              <Link to="/demographics">
-                <Icon.Users {...activeNavIcon('/demographics')} />
-              </Link>
-            </span>
-            <span>
-              <Link to="/essentials">
-                <Icon.Package {...activeNavIcon('/essentials')} />
-              </Link>
-            </span>
-            <span>
-              <Link to="/about">
-                <Icon.HelpCircle {...activeNavIcon('/about')} />
-              </Link>
-            </span>
-            <span>
-              <Link to="/blog">
-                <Icon.Book {...activeNavIcon('/about')} />
-              </Link>
-            </span>
+
             <span>{windowSize.width > 768 && <SunMoon {...{darkMode}} />}</span>
           </React.Fragment>
         )}
@@ -179,9 +160,7 @@ function Expand({pages, setExpand, darkMode, windowSize}) {
 
       {windowSize.width < 768 && <SunMoon {...{darkMode}} />}
 
-      <div className="expand-bottom">
-        <h5>{t('A crowdsourced initiative.')}</h5>
-      </div>
+
     </div>
   );
 }

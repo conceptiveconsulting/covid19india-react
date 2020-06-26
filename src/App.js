@@ -40,7 +40,7 @@ const schemaMarkup = {
   '@type': 'NGO',
   name: 'Coronavirus Outbreak in India: Latest Map and Case Count',
   alternateName: 'COVID-19 Tracker',
-  url: 'https://www.covid19india.org/',
+  url: 'https://covid19.org.in/',
   image: 'https://www.covid19india.org/thumbnail.png',
 };
 
@@ -55,30 +55,7 @@ function App() {
       displayName: 'Home',
       showInNavbar: true,
     },
-    {
-      pageLink: '/demographics',
-      view: Demographics,
-      displayName: 'Demographics',
-      showInNavbar: true,
-    },
-    {
-      pageLink: '/essentials',
-      view: Essentials,
-      displayName: 'Essentials',
-      showInNavbar: true,
-    },
-    {
-      pageLink: '/about',
-      view: FAQ,
-      displayName: 'About',
-      showInNavbar: true,
-    },
-    {
-      pageLink: '/blog',
-      view: Blog,
-      displayName: 'Blog',
-      showInNavbar: true,
-    },
+
     {
       pageLink: '/state/:stateCode',
       view: State,
