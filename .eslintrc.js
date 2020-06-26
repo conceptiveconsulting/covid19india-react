@@ -24,6 +24,7 @@ module.exports = {
     'react/prop-types': 0,
     'react-hooks/rules-of-hooks': 'warn',
     'react-hooks/exhaustive-deps': 'error',
+    'no-unused-vars': ['warn', { 'vars': 'all', 'args': 'after-used', 'ignoreRestSiblings': false }],
     'import/no-unresolved': [2, {commonjs: true, amd: true}],
     'import/named': 2,
     'import/default': 2,

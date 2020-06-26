@@ -77,7 +77,7 @@ function Home(props) {
   return (
     <React.Fragment>
       <Helmet>
-        <title>Coronavirus Outbreak in India - covid19india.org</title>
+        <title>Coronavirus Outbreak in India - covid19.org.in</title>
         <meta
           name="title"
           content="Coronavirus Outbreak in India: Latest Map and Case Count"
@@ -88,7 +88,7 @@ function Home(props) {
         <div className="home-left">
           <div className="header">
             <Suspense fallback={<div />}>
-              <Search />
+             
             </Suspense>
 
             {timeseries && (
